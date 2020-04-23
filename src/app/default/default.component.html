@@ -1,0 +1,121 @@
+<p style="font-weight: bold; font-size: x-large; font-family: sans-serif;">COVID-19 Dashboard (Vietnam)</p>
+
+<div fxLayout="row" fxLayoutAlign="space-between left" fxLayoutGap="10px" class="stats-cards">
+    <mat-card fxFlex="25">
+        <p style="text-align: center; font-family: sans-serif; font-weight: bold;">Confirmed Cases</p>
+        <p style="font-weight: bold; text-align: center; font-size: 2em; color: #383c43; margin: 50px 0px 50px 0px;">
+            {{service.data.case}}
+        </p>
+    </mat-card>
+
+    <mat-card fxFlex="25">
+        <p style="text-align: center; font-family: sans-serif; font-weight: bold;">Cases Recovered</p>
+        <p style="font-weight: bold; text-align: center; font-size: 2em; color: #383c43; margin: 50px 0px 50px 0px;">
+            {{service.data.recovered}}
+        </p>
+    </mat-card>
+
+    <mat-card fxFlex="25">
+        <p style="text-align: center; font-family: sans-serif; font-weight: bold;">Cases Fatalities</p>
+        <p style="font-weight: bold; text-align: center; font-size: 2em; color: #383c43; margin: 50px 0px 50px 0px;">
+            {{service.data.death}}
+        </p>
+    </mat-card>
+
+    <mat-card fxFlex="25">
+        <p style="text-align: center; font-family: sans-serif; font-weight: bold;">Active Cases</p>
+        <p style="font-weight: bold; text-align: center; font-size: 2em; color: #383c43; margin: 50px 0px 50px 0px;">
+            {{service.data.active}}
+        </p>
+    </mat-card>
+
+    <mat-card fxFlex="25">
+        <p style="text-align: center; font-family: sans-serif; font-weight: bold;">CRR & CFR</p>
+        <app-small-table></app-small-table>
+    </mat-card>
+</div>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between left" fxLayoutGap="2px" class="stats-cards">
+    <mat-card fxFlex="49.65">
+        <mat-card-content>
+            <app-linechart01></app-linechart01>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="49.65">
+        <mat-card-content>
+            <app-map-collection></app-map-collection>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between left" fxLayoutGap="2px" class="stats-cards">
+    <mat-card fxFlex="49.65">
+        <mat-card-content>
+            <app-linechart02></app-linechart02>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="49.65">
+        <mat-card-content>
+            <app-linechart03></app-linechart03>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between left" fxLayoutGap="2px" class="stats-cards">
+    <mat-card fxFlex="49.65">
+        <mat-card-content>
+            <app-stacked-area></app-stacked-area>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="49.65">
+        <mat-card-content>
+            <app-piechart></app-piechart>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between left" fxLayoutGap="2px" class="stats-cards">
+    <mat-card fxFlex="32.85">
+        <mat-card-content>
+            <app-stacked-bar01></app-stacked-bar01>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="32.85">
+        <mat-card-content>
+            <app-stacked-bar02></app-stacked-bar02>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="32.85">
+        <mat-card-content>
+            <app-stacked-bar03></app-stacked-bar03>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<br>
+
+<!-- <div fxLayoutAlign="space-between center" fxLayoutGap="2px" class="stats-cards"> -->
+    <!-- <mat-card fxFlex="28"> -->
+        <!-- <mat-card-content> -->
+    <app-table01></app-table01>
+        <!-- </mat-card-content> -->
+    <!-- </mat-card> -->
+
+<!-- </div> -->
+
+<br>
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: small; font-weight: bold;">
+    Data source: Bộ Y Tế</p>

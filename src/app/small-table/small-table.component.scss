@@ -1,0 +1,26 @@
+table{
+    width: 100%;
+    box-shadow: none;
+}
+
+.mat-row:nth-child(even){
+    background-color: #fafafa;
+    }
+
+.mat-row:nth-child(odd){
+    background-color: #ffffff;
+    }
+
+.mat-cell{
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+td.mat-cell{
+    border-bottom-style: none;
+}
+
+th.mat-header-cell{
+    border-bottom-style: ridge;
+}
